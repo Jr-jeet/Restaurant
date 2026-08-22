@@ -34,6 +34,11 @@
 
 use reasturant;
 
-#Which cuisines have the highest popularity?
+# Which cuisines have the highest popularity?
 select * from cuisines ;
-select * from nutrition ;restaurants
+select * from r_stats , cuisines ;
+select Most_common_cuisine,avg(Popularity_score)
+from r_stats
+group by Most_common_cuisine
+order by avg(Popularity_score)  DESC;
+
