@@ -42,3 +42,10 @@ from r_stats
 group by Most_common_cuisine
 order by avg(Popularity_score)  DESC;
 
+# Which restaurants offer the best value?
+select * from restaurants ;
+select * from r_stats;
+select Estimated_value_score , Restaurant_ID
+from r_stats
+order by Estimated_value_score DESC ;
+
