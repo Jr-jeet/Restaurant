@@ -75,6 +75,7 @@ WITH restaurant_ranked AS (
     FROM restaurant_statistics
 )
 
+
 SELECT
     rr.Restaurant_ID,
     rr.Popularity_score,
