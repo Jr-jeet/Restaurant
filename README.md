@@ -64,3 +64,22 @@ SELECT
     Popularity_score
 FROM restaurant_ranked
 WHERE performance_group = 1;
+
+WITH restaurant_ranked AS (
+    SELECT
+        Restaurant_ID,
+        Popularity_score,
+        NTILE(4) OVER (
+            ORDER BY Popularity_score DESC
+        ) AS performance_group
+    FROM restaurant_statistics
+)
+
+SELECT
+    rr.Restaurant_ID,
+    rr.Popularity_score,
+    rf.*
+FROM restaurant_ranked rr
+JOIN restaurant_features rf
+    ON rr.Restaurant_ID = rf.Restaurant_ID
+WHERE rr.performance_group = 1;
