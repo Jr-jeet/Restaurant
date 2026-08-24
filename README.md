@@ -50,3 +50,17 @@ order by Estimated_value_score DESC ;
 select * from r_f ;
 
 
+WITH restaurant_ranked AS (
+    SELECT
+        Restaurant_ID,
+        Popularity_score,
+        NTILE(4) OVER (
+            ORDER BY Popularity_score DESC
+        ) AS performance_group
+    FROM r_stats
+)
+SELECT
+    Restaurant_ID,
+    Popularity_score
+FROM restaurant_ranked
+WHERE performance_group = 1;
