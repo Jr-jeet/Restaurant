@@ -49,4 +49,5 @@ from r_stats
 order by Estimated_value_score DESC ;
 select * from r_f ;
 
-
+alter table reasturant.restaurants
+rename column ï»¿Restaurant_ID to Restaurant_ID ;
