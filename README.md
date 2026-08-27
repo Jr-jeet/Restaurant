@@ -85,3 +85,9 @@ from new_tab
 order by Popularity_score DESC 
 limit 30 ;
 
+select Delivery_available   , Average_rating ,
+rank () over( partition by Delivery_available )
+from new_tab
+order by Average_rating DESC 
+limit 30
+
