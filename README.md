@@ -80,3 +80,8 @@ from restaurants as r
 left join r_stats as rs
 on r.Restaurant_ID = rs.Restaurant_ID )
 
+select Delivery_available ,Popularity_score ,Estimated_value_score , Average_rating
+from new_tab
+order by Popularity_score DESC 
+limit 30 ;
+
