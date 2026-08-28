@@ -60,12 +60,5 @@ Average_rating,
 Review_count
 from restaurants as r
 
-Restaurant_name,
-Delivery_available,
-Takeaway,
-Dine_in,
-Average_rating,
-Review_count
-from restaurants as r
 
 
