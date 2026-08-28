@@ -79,3 +79,4 @@ left join r_stats
 on restaurants.Restaurant_ID=  r_stats.Restaurant_ID 
 order by Popularity_score DESC
 limit 30 )
+select sum(Review_count) from P_S_T as P_S_T01 ;
