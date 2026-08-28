@@ -57,3 +57,17 @@ rename column ï»¿Restaurant_ID to Restaurant_ID ;
 select * from restaurants ,r_stats ;
 select * from restaurants ;
 select * from r_stats ;
+
+select restaurants.Average_rating ,Restaurant_name ,Review_count,
+r_stats.Popularity_score
+from restaurants
+left join r_stats
+on restaurants.Restaurant_ID=  r_stats.Restaurant_ID 
+order by Average_rating DESC ;
+
+select restaurants.Average_rating ,Restaurant_name ,Review_count,
+r_stats.Popularity_score
+from restaurants
+left join r_stats
+on restaurants.Restaurant_ID=  r_stats.Restaurant_ID 
+order by Popularity_score DESC ;
