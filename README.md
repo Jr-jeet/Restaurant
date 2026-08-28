@@ -61,4 +61,16 @@ Review_count
 from restaurants as r
 
 
+select for i smdh with new_tab as ( select 
+Restaurant_name,
+Delivery_available,
+Takeaway,
+Dine_in,
+Average_rating,
+Review_count
+from restaurants as r
+left join r_stats as rs
+on r.Restaurant_ID = rs.Restaurant_ID )
 
+select    Restaurant_name,
+Delivery_available,
