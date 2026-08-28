@@ -52,3 +52,20 @@ select * from r_f ;
 alter table reasturant.restaurants
 rename column ï»¿Restaurant_ID to Restaurant_ID ;
 
+Restaurant_name,
+Delivery_available,
+Takeaway,
+Dine_in,
+Average_rating,
+Review_count
+from restaurants as r
+
+Restaurant_name,
+Delivery_available,
+Takeaway,
+Dine_in,
+Average_rating,
+Review_count
+from restaurants as r
+
+
