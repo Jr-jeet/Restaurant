@@ -71,3 +71,11 @@ from restaurants
 left join r_stats
 on restaurants.Restaurant_ID=  r_stats.Restaurant_ID 
 order by Popularity_score DESC ;
+
+with P_S_T as (select restaurants.Average_rating ,Restaurant_name ,Review_count,
+r_stats.Popularity_score
+from restaurants
+left join r_stats
+on restaurants.Restaurant_ID=  r_stats.Restaurant_ID 
+order by Popularity_score DESC
+limit 30 )
