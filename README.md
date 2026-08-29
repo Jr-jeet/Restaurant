@@ -97,3 +97,10 @@ on restaurants.Restaurant_ID=r_stats.Restaurant_ID
 order by Popularity_score DESC 
 limit 30  
  )
+
+select round(sum(Delivery_available = 'TRUE')/30 *100) as Delivery_count,
+round(sum(Takeaway = 'TRUE' )/30 *100) as Takeaway_count,
+round(sum(Dine_in = 'TRUE')/30 *100) as Dine_in_count,
+round(sum(Reservations= 'TRUE' )/30 *100) as Reservations_count
+from popular_reataurant ;
+# Here is the  Delivery_available is the common 
