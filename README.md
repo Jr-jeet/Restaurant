@@ -80,3 +80,12 @@ on restaurants.Restaurant_ID=  r_stats.Restaurant_ID
 order by Popularity_score DESC
 limit 30 )
 select sum(Review_count) from P_S_T as P_S_T01 ;
+
+with A_R_T as (select restaurants.Average_rating ,Restaurant_name ,Review_count,
+r_stats.Popularity_score
+from restaurants
+left join r_stats
+on restaurants.Restaurant_ID=  r_stats.Restaurant_ID 
+order by Average_rating DESC
+limit 30 ) 
+select sum(Review_count) from A_R_T  as A_R_T01 ;
