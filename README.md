@@ -104,3 +104,5 @@ round(sum(Dine_in = 'TRUE')/30 *100) as Dine_in_count,
 round(sum(Reservations= 'TRUE' )/30 *100) as Reservations_count
 from popular_reataurant ;
 # Here is the  Delivery_available is the common 
+
+# What is the delivery-time performance
