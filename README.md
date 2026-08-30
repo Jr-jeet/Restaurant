@@ -116,3 +116,6 @@ d.Delivery_fee
 from restaurants as r
 join delivery_metrics as d
 on r.Restaurant_ID=d.Restaurant_ID )
+select Restaurant_name, Restaurant_ID,Cancellation_rate from Highest_Cancel 
+order by d.Cancellation_rate DESC
+limit 30;
