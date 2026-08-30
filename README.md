@@ -105,4 +105,14 @@ round(sum(Reservations= 'TRUE' )/30 *100) as Reservations_count
 from popular_reataurant ;
 # Here is the  Delivery_available is the common 
 
-Which restaurants have the highest cancellation rates?
+# Which restaurants have the highest cancellation rates?
+select * from  restaurants ,delivery_metrics ;
+with  Highest_Cancel as (select r.Restaurant_ID,
+r.Restaurant_name ,
+d.Cancellation_rate,
+d.Average_delivery_time,
+d.Estimated_delivery_time,
+d.Delivery_fee
+from restaurants as r
+join delivery_metrics as d
+on r.Restaurant_ID=d.Restaurant_ID )
