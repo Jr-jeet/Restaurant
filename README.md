@@ -53,7 +53,7 @@ alter table reasturant.restaurants
 rename column ï»¿Restaurant_ID to Restaurant_ID ;
 
 
-
+# What was common on high performance restaurant ?
 select * from restaurants ,r_stats ;
 select * from restaurants ;
 select * from r_stats ;
