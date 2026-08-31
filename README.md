@@ -122,3 +122,14 @@ limit 30;
 
 # #Which restaurants have good value scores but low popularity and could be growth opportunities?
 select * from r_stats,restaurants;
+with growing_restaurant as (select rs.Popularity_score,
+rs.Estimated_value_score,
+r.Restaurant_name,
+r.Average_rating
+from r_stats as rs
+join restaurants as r
+on rs.Restaurant_ID=r.Restaurant_ID)
+select * , row_number() over() from growing_restaurant 
+where Estimated_value_score >6.6 
+order by  Popularity_score 
+limit 30 ;
