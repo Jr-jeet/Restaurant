@@ -132,4 +132,4 @@ on rs.Restaurant_ID=r.Restaurant_ID)
 select * , row_number() over() from growing_restaurant 
 where Estimated_value_score >6.6 
 order by  Popularity_score 
-limit 30 ;
+limit 20 ;
