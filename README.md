@@ -121,3 +121,4 @@ order by d.Cancellation_rate DESC
 limit 30;
 
 # #Which restaurants have good value scores but low popularity and could be growth opportunities?
+select * from r_stats,restaurants;
