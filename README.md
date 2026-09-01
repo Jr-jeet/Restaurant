@@ -136,3 +136,14 @@ limit 20 ;
 
 #Which restaurants have the worst total customer fees (Delivery_fee + Service_fee + Packaging_fee)?
 select * from delivery_metrics ;
+
+with worst_customer_fee as (select Restaurant_ID,
+Delivery_fee,
+Service_fee,
+Packaging_fee,
+round(Delivery_fee+
+Service_fee+
+Packaging_fee) as total_fee
+from delivery_metrics
+order by total_fee DESC 
+limit 30 )
