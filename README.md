@@ -156,3 +156,5 @@ from worst_customer_fee as w
 join restaurants as r
     on w.Restaurant_ID = r.Restaurant_ID
 order by w.total_fee DESC ;
+
+#Are restaurants with WiFi associated with higher popularity?
