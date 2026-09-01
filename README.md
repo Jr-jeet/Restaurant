@@ -1,4 +1,6 @@
 # Restaurant
+# RESTAURANT ARE THE ONE OF THE MOST RISKY BUSINESS IN THE WORLD "Failure Rate: Around 60% of restaurants fail in their first year, and up to 80% fail within five years"
+
                          countries
                              │
                           Country
@@ -33,6 +35,10 @@
      
 
 use reasturant;
+
+
+# Are restaurants with WiFi associated with higher popularity?
+
 
 # Which cuisines have the highest popularity?
 select * from cuisines ;
@@ -157,4 +163,4 @@ join restaurants as r
     on w.Restaurant_ID = r.Restaurant_ID
 order by w.total_fee DESC ;
 
-# Are restaurants with WiFi associated with higher popularity?
+
