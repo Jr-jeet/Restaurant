@@ -1,5 +1,8 @@
+<img width="151" height="148" alt="image" src="https://github.com/user-attachments/assets/b4e0a97a-454a-4ed3-a058-65d5e99edb66" />
+
 # Restaurant
 # RESTAURANT ARE THE ONE OF THE MOST RISKY BUSINESS IN THE WORLD "Failure Rate: Around 60% of restaurants fail in their first year, and up to 80% fail within five years"
+
 
                          countries
                              │
@@ -35,6 +38,11 @@
      
 
 use reasturant;
+
+# which city we have to open your new branch ?
+
+
+
 
 
 # Are restaurants with WiFi associated with higher popularity?
