@@ -147,3 +147,12 @@ Packaging_fee) as total_fee
 from delivery_metrics
 order by total_fee DESC 
 limit 30 )
+
+select 
+r.Restaurant_ID,
+r.Restaurant_name,
+w.total_fee
+from worst_customer_fee as w
+join restaurants as r
+    on w.Restaurant_ID = r.Restaurant_ID
+order by w.total_fee DESC ;
