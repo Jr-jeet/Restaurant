@@ -172,4 +172,13 @@ join restaurants as r
 order by w.total_fee DESC ;
 
 # Are restaurants with WiFi associated with higher popularity?
-
+select * from r_stats , r_f ;
+with new01 as (select s.Restaurant_ID,
+s.Popularity_score,
+f.WiFi
+from r_stats as s
+join r_f as f
+on s.Restaurant_ID = f.Restaurant_ID  
+order by s.Popularity_score DESC
+ limit 400)
+ 
