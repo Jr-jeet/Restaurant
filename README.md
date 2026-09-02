@@ -148,7 +148,7 @@ where Estimated_value_score >6.6
 order by  Popularity_score 
 limit 20 ;
 
-#Which restaurants have the worst total customer fees (Delivery_fee + Service_fee + Packaging_fee)?
+# Which restaurants have the worst total customer fees (Delivery_fee + Service_fee + Packaging_fee)?
 select * from delivery_metrics ;
 
 with worst_customer_fee as (select Restaurant_ID,
@@ -171,4 +171,5 @@ join restaurants as r
     on w.Restaurant_ID = r.Restaurant_ID
 order by w.total_fee DESC ;
 
+# Are restaurants with WiFi associated with higher popularity?
 
