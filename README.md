@@ -181,4 +181,7 @@ join r_f as f
 on s.Restaurant_ID = f.Restaurant_ID  
 order by s.Popularity_score DESC
  limit 400)
- 
+ select sum(WiFi ='True') as wifi_aviable,
+sum( WiFi = 'FALSE') AS WIFI_NOT_AVIABLE
+from new01;
+
