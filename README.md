@@ -192,3 +192,4 @@ SELECT C.City,
 C.Population,
 C.Urban_density,
 C.Area_km2,
+
