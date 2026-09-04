@@ -2,6 +2,8 @@
 
 
 
+
+
 SELECT
     City,
     COUNT(*) AS City_Count
@@ -17,8 +19,9 @@ ORDER BY Restaurant_Count DESC;
 SELECT
     WiFi,
     COUNT(*) AS Total_Count
-FROM r_f
-GROUP BY WiFi;
+FROM r_f;
+
+
 
 
 # Restaurant
