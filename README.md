@@ -8,6 +8,12 @@ SELECT
 FROM city_statistics
 GROUP BY City
 ORDER BY City_Count DESC;
+SELECT
+    City,
+    COUNT(*) AS Restaurant_Count
+FROM restaurants
+GROUP BY City
+ORDER BY Restaurant_Count DESC;
 
 
 
