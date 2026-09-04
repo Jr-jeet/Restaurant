@@ -14,7 +14,11 @@ SELECT
 FROM restaurants
 GROUP BY City
 ORDER BY Restaurant_Count DESC;
-
+SELECT
+    WiFi,
+    COUNT(*) AS Total_Count
+FROM r_f
+GROUP BY WiFi;
 
 
 # Restaurant
