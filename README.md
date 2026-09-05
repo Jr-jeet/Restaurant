@@ -1,29 +1,5 @@
 <img width="151" height="148" alt="image" src="https://github.com/user-attachments/assets/b4e0a97a-454a-4ed3-a058-65d5e99edb66" />
 
-
-
-
-
-SELECT
-    City,
-    COUNT(*) AS City_Count
-FROM city_statistics
-GROUP BY City
-ORDER BY City_Count DESC;
-SELECT
-    City,
-    COUNT(*) AS Restaurant_Count
-FROM restaurants
-GROUP BY City
-ORDER BY Restaurant_Count DESC;
-SELECT
-    WiFi,
-    COUNT(*) AS Total_Count
-FROM r_f;
-
-
-
-
 # Restaurant
 # RESTAURANT ARE THE ONE OF THE MOST RISKY BUSINESS IN THE WORLD "Failure Rate: Around 60% of restaurants fail in their first year, and up to 80% fail within five years"
 
