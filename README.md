@@ -185,11 +185,4 @@ order by s.Popularity_score DESC
 sum( WiFi = 'FALSE') AS WIFI_NOT_AVIABLE
 from new01;
 # SO THE POINT WAS WIFI IS NOT A PART OF SUCCESSFULL REATURANT, BUT THE POINT IS THAT IF WIFI IS AVIABLE ROTATION OF TABLE BECOME SLOW "IF RESTAURANT WAS POPULAR AND CUSTUMBER ARE WAITING FOR TABLE SO NO NEEDED OF WIFI AND VICE-VERSA"
-# which city we have to open your new branch 
-
-SELECT * FROM cities ,city_statistics ,countries ;
-SELECT C.City,
-C.Population,
-C.Urban_density,
-C.Area_km2,
 
