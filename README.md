@@ -193,4 +193,7 @@ RS.Popularity_score ,
 R.Restaurant_ID
 FROM restaurants AS R 
 JOIN r_stats AS RS 
-ON R.Restaurant_ID =RS.Restaurant_ID ) ,
+ON R.Restaurant_ID =RS.Restaurant_ID ) 
+
+
+
