@@ -198,4 +198,5 @@ limit 10 )
 select * from COUNTRY ;
 
 # which CITY has your best selling reasturant 
+SELECT * FROM restaurants  ,r_stats ;
 
