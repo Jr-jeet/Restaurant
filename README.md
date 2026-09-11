@@ -205,3 +205,12 @@ R.Restaurant_ID
 FROM restaurants AS R 
 JOIN r_stats AS RS 
 ON R.Restaurant_ID =RS.Restaurant_ID ) ,
+
+CON AS (SELECT C.City,
+COUNTRY.Popularity_score,
+COUNTRY.Restaurant_ID
+FROM city_statistics AS C
+JOIN COUNTRY 
+ON C.City = COUNTRY.City
+ORDER BY Popularity_score DESC
+LIMIT 400 )
