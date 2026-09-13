@@ -219,3 +219,12 @@ SELECT City, COUNT(*)  AS CITY_COUNT FROM CON
 GROUP BY City
 ORDER BY CITY_COUNT  DESC ;
 # IDK IS THIS IS RIGHT OR WRONG "IF SOMEONE MAKE BETTER PLEASE"
+
+#Which cities have high restaurant density but low delivery coverage?
+select * from city_statistics ;
+
+select avg(Delivery_coverage) from city_statistics ; #(0.7855000000000001)
+select Restaurant_density , Delivery_coverage ,City
+from city_statistics
+where Delivery_coverage < 0.7855000000000001
+order by Restaurant_density DESC ;
