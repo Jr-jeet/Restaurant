@@ -229,6 +229,8 @@ from city_statistics
 where Delivery_coverage < 0.7855000000000001
 order by Restaurant_density DESC ;
 
+
+#Which cities have the highest cuisine diversity?
 select * from city_statistics ;
 select row_number() over() Cuisine_diversity_index , Country ,City
 from city_statistics
