@@ -228,3 +228,6 @@ select Restaurant_density , Delivery_coverage ,City
 from city_statistics
 where Delivery_coverage < 0.7855000000000001
 order by Restaurant_density DESC ;
+
+select * from city_statistics ;
+select row_number() over() Cuisine_diversity_index , Country ,City
