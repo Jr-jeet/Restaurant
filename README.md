@@ -246,3 +246,8 @@ select Country , avg(Opening_year)
 from  restaurants 
 group by Country
 ;
+
+select Country , City, avg(Opening_year)
+over (partition by Country) as yrs
+from  restaurants 
+;
