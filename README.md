@@ -241,3 +241,8 @@ select count(City), City
 from restaurants
 group by City
 ;
+
+select Country , avg(Opening_year)
+from  restaurants 
+group by Country
+;
