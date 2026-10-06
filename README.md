@@ -234,8 +234,7 @@ order by Restaurant_density DESC ;
 select * from city_statistics ;
 select row_number() over() Cuisine_diversity_index , Country ,City
 from city_statistics
-order by Cuisine_diversity_index DESC
- ;
+order by Cuisine_diversity_index DESC;
 
 select count(City), City
 from restaurants
