@@ -134,6 +134,7 @@ select Restaurant_name, Restaurant_ID,Cancellation_rate from Highest_Cancel
 order by d.Cancellation_rate DESC
 limit 30;
 
+
 # #Which restaurants have good value scores but low popularity and could be growth opportunities?
 select * from r_stats,restaurants;
 with growing_restaurant as (select rs.Popularity_score,
